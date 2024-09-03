@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+   <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DeTai"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".dangki"
+            android:label="dangki" />
+        <activity
+            android:name=".chitietsanpham"
+            android:label="chitietsanpham" />
+        <activity
+            android:name=".hoadon"
+            android:label="hoadon" />
+        <activity
+            android:name=".dangkithanhcong"
+            android:label="dangkithanhcong" />
+        <activity
+            android:name=".laylaimatkhau"
+            android:label="laylaimatkhau" />
+        <activity
+            android:name=".danhmuc"
+            android:label="danhmuc" />
+        <activity
+            android:name=".giohang"
+            android:label="giohang" />
+        <activity
+            android:name=".sanphamnoibat"
+            android:label="sanphamnoibat" />
+        <activity
+            android:name=".sanphamyeuthich"
+            android:label="sanphamyeuthich" />
+        <activity
+            android:name=".thanhtoan"
+            android:label="thanhtoan" />
+        <activity
+            android:name=".thanhtoanbangthe"
+            android:label="thanhtoanbangthe" />
+        <activity
+            android:name=".trangchu"
+            android:label="trangchu" />
+        <activity
+            android:name=".user2"
+            android:label="user1"
+            />
+        <activity
+            android:name=".user1"
+            android:label="user"
+            />
+        <activity
+            android:name=".dm_sp.phanloai1_aosomi"
+            android:label="sptheodanhmuc"
+            />
+        <activity
+            android:name=".dm_sp.phanloai2_aothun"
+            android:label="sptheodanhmuc"
+            />
+        <activity
+            android:name=".dm_sp.phanloai3_aokieu"
+            android:label="sptheodanhmuc"
+            />
+        <activity
+            android:name=".dm_sp.phanloai4_quantay"
+            android:label="sptheodanhmuc"
+            />
+        <activity
+            android:name=".dm_sp.phanloai5_vay"
+            android:label="sptheodanhmuc"
+            />
+        <activity
+            android:name=".dm_sp.phanloai6_chanvay"
+            android:label="sptheodanhmuc"
+            />
+        <activity
+            android:name=".dm_sp.phanloai7_setdonam"
+            android:label="sptheodanhmuc"
+            />
+        <activity
+            android:name=".dm_sp.phanloai8_setdonu"
+            android:label="sptheodanhmuc"
+            />
+        <activity
+            android:name=".AI"
+            android:label="AI" />
+        <activity
+            android:name=".Timkiem"
+            android:label="Timkiem" />
+
+    </application>
+
+</manifest>

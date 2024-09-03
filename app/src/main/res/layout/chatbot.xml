@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AI">
+
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbarchatbot"
+      android:layout_width="323dp"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="264dp"
+      android:layout_weight="1"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/chatView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:title="Hỗ trợ" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/constraintLayout"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:background="@drawable/edittext2"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/chatView"
+      app:layout_constraintStart_toStartOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+      <EditText
+          android:id="@+id/editMessage"
+          android:layout_width="287dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:ems="10"
+          android:hint="Hãy nhập câu hỏi bạn muốn..."
+          android:inputType="textPersonName"
+          android:padding="10dp" />
+
+      <ImageButton
+          android:id="@+id/btnSend"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center|right"
+          android:backgroundTint="#43A047"
+          android:foregroundGravity="right"
+          android:padding="5dp"
+          android:scaleType="fitXY"
+          app:srcCompat="@android:drawable/ic_media_play" />
+    </LinearLayout>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/chatView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="264dp"
+      android:layout_marginBottom="104dp"
+      android:orientation="vertical"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/toolbarchatbot"
+      app:stackFromEnd="true"
+      tools:itemCount="2"
+      tools:listitem="@layout/adapter_message_one" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
